@@ -20,5 +20,9 @@
     "web server",
     "server",
     "easy"
-  ]
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LimentionXGroup/LimentionS"
+  }
 }
