@@ -2,7 +2,7 @@
   "author": "LimentionX Group",
   "name": "limentions",
   "description": "Build web server easier",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "dist/main.js",
   "license": "MIT",
   "scripts": {
