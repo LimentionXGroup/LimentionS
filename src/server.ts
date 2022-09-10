@@ -13,6 +13,10 @@ export default class server extends http.Server {
         this.options = options
     }
 
+    public getPort() {
+        return this.options.port
+    }
+
     public start(callback: Function): void {
         this.listen(this.options.port, () => {
             callback()
