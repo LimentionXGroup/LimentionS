@@ -1,6 +1,5 @@
 import * as http from "http";
 
-import mapper from "./lib/Mapper"
 import {ServerOptions} from "./lib/options";
 import * as child_process from "child_process";
 
