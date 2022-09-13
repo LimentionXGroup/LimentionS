@@ -2,6 +2,7 @@ import * as http from "http";
 
 import {ServerOptions} from "./lib/options";
 import * as child_process from "child_process";
+import * as fs from "fs";
 
 
 export default class server extends http.Server {
@@ -57,20 +58,23 @@ export default class server extends http.Server {
         })
     }
 
-    /**
-    public useExtension(extension: any) {
-        const ext = new extension()
-        setTimeout(() => {
-            ext.whenLoaded()
-            ext.isLoaded = true
-        }, 1000)
-
+    public useRoot(rootDir: string) {
         this.on("request", (req, res) => {
-            if (ext.isLoaded) {
-                ext.whenCaught(req, res)
+            const url = req.url
+
+            try {
+                let content: string
+
+                if (url === "/") content = fs.readFileSync(rootDir + "/index.html", "utf-8")
+
+                else content = fs.readFileSync(rootDir + url, "utf-8")
+
+
+                res.end(content)
+            }catch (ex) {
+                res.end(`${url}: No such file in root directory`)
             }
         })
     }
-     **/
 
 }
