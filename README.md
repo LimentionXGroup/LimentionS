@@ -1,5 +1,9 @@
 # LimentionS - build web server easier
 
+## Attention
+**We are sorry that README.md example code was wrong**  
+**Now, we fixed it.**
+
 ## Installation
 npm:
 ```shell
@@ -18,6 +22,10 @@ const server = new limentions.Server({develompentMode: true, port: 8080})
 // the mapping method is called when a request is made to "/".
 server.mapping("/", (req, res) => {
     res.end("Hello World")
+})
+
+server.start(() => {
+    console.log(`server started with port ${server.getPort()}`)
 })
 ```
 ## Using Mapper
@@ -40,6 +48,10 @@ const testMapper = require("./testMapper")
 const server = new limentions.Server({developmentMode: true, port: 8080})
 
 server.useMapper("/test", testMapper)
+
+server.start(() => {
+    console.log(`server started with port ${server.getPort()}`)
+})
 ```
 
 ## License

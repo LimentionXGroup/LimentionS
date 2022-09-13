@@ -6,8 +6,8 @@
   "main": "dist/main.js",
   "license": "MIT",
   "scripts": {
-    "test": "node test/test.js",
-    "build": "tsc"
+    "build": "tsc",
+    "test:direct": "node direct-test/test.js"
   },
   "devDependencies": {
     "@types/node": "^18.7.16",

@@ -57,4 +57,20 @@ export default class server extends http.Server {
         })
     }
 
+    /**
+    public useExtension(extension: any) {
+        const ext = new extension()
+        setTimeout(() => {
+            ext.whenLoaded()
+            ext.isLoaded = true
+        }, 1000)
+
+        this.on("request", (req, res) => {
+            if (ext.isLoaded) {
+                ext.whenCaught(req, res)
+            }
+        })
+    }
+     **/
+
 }
