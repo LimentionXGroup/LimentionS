@@ -1,8 +1,8 @@
 # LimentionS - build web server easier
 
 ## Attention
-**We are sorry that README.md example code was wrong**  
-**Now, we fixed it.**
+**Version 1.1.0 released!**  
+For more information? please our [wiki](https://github.com/LimentionXGroup/LimentionS/wiki)
 
 ## Installation
 npm:
