@@ -2,7 +2,14 @@
 
 ## Attention
 **Version 1.1.0 released!**  
-For more information? please our [wiki](https://github.com/LimentionXGroup/LimentionS/wiki)
+For more information? please visit our [wiki](https://github.com/LimentionXGroup/LimentionS/wiki)
+
+## We're glad that over 500 downloads!
+Thank you for using LimentionS!  
+We have decided to sustain the development of this library  
+because downloaded more than we thought.
+
+Dear users
 
 ## Installation
 npm:
